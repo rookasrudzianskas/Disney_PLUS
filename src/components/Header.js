@@ -3,15 +3,15 @@ import styled from "styled-components";
 
 const Header = () => {
     return (
-        <Container>
+        <Nav>
             Header
-        </Container>
+        </Nav>
     );
 };
 
 export default Header;
 
-const Container = styled.div`
+const Nav = styled.div`
     height: 70px;
     background-color: #090b13;
 `
