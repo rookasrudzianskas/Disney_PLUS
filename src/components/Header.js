@@ -4,7 +4,10 @@ import styled from "styled-components";
 const Header = () => {
     return (
         <Nav>
-            <Logo />
+            <Logo src="" />
+            <NavMenu>
+
+            </NavMenu>
         </Nav>
     );
 };
@@ -17,5 +20,9 @@ const Nav = styled.nav`
 `
 
 const Logo = styled.img`
+  width: 80px;
+`
+
+const NavMenu = styled.div`
   
 `
