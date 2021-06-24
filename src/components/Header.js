@@ -19,6 +19,7 @@ const Nav = styled.nav`
   background-color: #090b13;
   display: flex;
   align-items: center;
+  padding:  0 36px;
   
 `
 
