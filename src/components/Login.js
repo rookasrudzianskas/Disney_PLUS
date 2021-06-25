@@ -50,7 +50,8 @@ const CTA = styled.div`
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin-top: 100px
+  margin-top: 100px;
+  align-items: center;
 `
 
 const CTALogoOne = styled.img`
@@ -87,4 +88,5 @@ const Description = styled.p`
 
 const CTALogoTwo = styled.img`
   margin-top: 15px;
+  width: 90%;
 `
