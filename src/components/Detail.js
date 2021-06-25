@@ -1,25 +1,36 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
 import {PlusOneOutlined} from "@material-ui/icons";
 import {selectMovies} from "../features/movie/movieSlice";
 import {useSelector} from "react-redux";
 import {useParams} from "react-router";
+import db from "../firebase";
 
 
 const Detail = () => {
     const { id } = useParams();
+    const [movie, setMovie ] = useState();
 
-    const movies = useSelector(selectMovies);
-
+    useEffect(() => {
+        // get movies data from the firebase
+        db.collection("movies").doc(id).get().then((doc) => {
+            if(doc.exists) {
+                // save the movie data
+                setMovie(doc.data());
+            } else {
+                // redirect to the hompage
+            }
+        })
+    }, []);
 
     return (
         <Container>
             <Background>
-                <img src={movies.cardImg} alt=""/>
+                <img src={movie.backgroundImg} alt=""/>
             </Background>
             
             <ImageTitle>
-                <img src="https://upload.wikimedia.org/wikipedia/fr/1/1a/Bao_logo.png" alt=""/>
+                <img src={movie.titleImg} alt=""/>
             </ImageTitle>
 
             <Controls>
@@ -45,11 +56,11 @@ const Detail = () => {
             </Controls>
 
             <SubTitle>
-                    2020 👉 7m 👉 Family, Fantasy, Kids, Animation
+                {movie.subTitle}
             </SubTitle>
 
             <Description>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eos libero maiores natus nemo nesciunt placeat porro praesentium provident recusandae, unde voluptas, voluptatum? Aut dicta doloribus ducimus eum expedita explicabo maiores molestiae repellendus, sint voluptatum. A ab accusantium atque commodi dignissimos dolor eos, eveniet, ex facilis incidunt itaque libero nemo nisi odit quibusdam quis repellendus similique suscipit ut veniam voluptas.
+                {movie.description}
             </Description>
 
         </Container>
