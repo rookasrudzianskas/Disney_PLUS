@@ -76,18 +76,18 @@ const Controls = styled.div`
   
 `
 
-const PlayButton = styled.div`
+const PlayButton = styled.button`
   
 `
 
-const TrailerButton = styled.div`
+const TrailerButton = styled.button`
   
 `
 
-const AddButton = styled.div`
+const AddButton = styled.button`
   
 `
 
-const GroupWatchButton = styled.div`
+const GroupWatchButton = styled.button`
   
 `
