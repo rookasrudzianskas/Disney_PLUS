@@ -24,7 +24,7 @@ const userSlice = createSlice({
     }
 })
 
-export const { setUser } = userSlice.actions;
+export const { setUserLogin, setSignOut } = userSlice.actions;
 
 export const select = (state) => state.user.movies;
 
