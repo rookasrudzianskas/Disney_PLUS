@@ -59,8 +59,8 @@ const Logo = styled.img`
 
 const NavMenu = styled.div`
   display: flex;
-  flex: 1;
   margin-left: 25px;
+  flex: 1;
   
   a {
     display: flex;
@@ -80,8 +80,10 @@ const NavMenu = styled.div`
 `
 
 const UserImage = styled.img`
+  display: flex;
   width:  48px;
   height: 48px;
   border-radius: 50%;
   cursor: pointer;
+  margin-left: 730px;
 `
