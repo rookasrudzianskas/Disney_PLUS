@@ -61,6 +61,7 @@ const NavMenu = styled.div`
   display: flex;
   margin-left: 25px;
   flex: 1;
+  align-items: center;
   
   a {
     display: flex;
@@ -75,6 +76,18 @@ const NavMenu = styled.div`
     span {
       font-size: 13px;
       letter-spacing: 1.2px;
+      position: relative;
+      
+      
+      &:after {
+        content: "";
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -6px;
+      }
     }
   }
 `
