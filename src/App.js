@@ -20,9 +20,13 @@ function App() {
                 <Route path="/detail">
                     <Detail />
                 </Route>
+
+                <Route path="/">
+                    <Home />
+                </Route>
+
             </Switch>
         </Router>
-        <Home />
     </div>
   );
 }
