@@ -1,15 +1,38 @@
 import React from 'react';
 import styled from "styled-components";
+import {auth, provider} from "../firebase";
+import {setUserLogin} from "../features/user/userSlice";
+import {useDispatch} from "react-redux";
+import {useHistory} from "react-router";
 
 const Login = () => {
 
+    const dispatch = useDispatch();
 
+    const history = useHistory();
+
+    const signIn = () => {
+        // logins
+
+        auth.signInWithPopup(provider).then((result) => {
+            let user = result.user;
+
+            dispatch(setUserLogin({
+                name: user.displayName,
+                email: user.email,
+                photo: user.photoURL,
+            }))
+
+            history.push('/');
+
+        })
+    }
     return (
         <Container>
             <CTA>
                 <CTALogoOne src="/images/cta-logo-one.svg" />
 
-                <SignUp>
+                <SignUp onClick={signIn}>
                     GET ALL THERE 🚀
                 </SignUp>
 
