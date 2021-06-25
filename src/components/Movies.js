@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from "styled-components";
 import {selectMovies} from "../features/movie/movieSlice";
+import {useSelector} from "react-redux";
 
 const Movies = () => {
+
+    const movies = useSelector(selectMovies);
+
     return (
         <Container>
             <h4>Recommended For You</h4>
