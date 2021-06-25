@@ -4,9 +4,11 @@ import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {selectUserEmail, selectUserName, selectUserPhoto, setUserLogin} from "../features/user/userSlice";
 import {auth, provider} from "../firebase";
+import {useHistory} from "react-router";
 
 
 const Header = () => {
+    const history = useHistory();
 
     const userName = useSelector(selectUserName);
     const userEmail = useSelector(selectUserEmail);
@@ -24,6 +26,10 @@ const Header = () => {
                 email: user.email,
                 photo: user.photoURL,
             }))
+
+            history.push('/');
+
+
         })
     }
 
