@@ -19,9 +19,11 @@ const Header = () => {
             </Link>
                 {
                     !userName ? (
-                        <Login>
-                            LOGIN
-                        </Login>
+                        <LoginContainer>
+                            <Login>
+                                LOGIN
+                            </Login>
+                        </LoginContainer>
                     ) :
                         <>
                         <NavMenu>
@@ -151,4 +153,10 @@ const Login = styled.button`
     cursor: pointer;
     transition: all 250ms;
   }
+`
+
+const LoginContainer = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 `
