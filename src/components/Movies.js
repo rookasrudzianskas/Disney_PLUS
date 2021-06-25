@@ -15,7 +15,7 @@ const Movies = () => {
                 {
                     movies && movies.map((movie) => (
                         <Wrap>
-                            <img key={movie.cardImg} src={movie.cardImg} alt=""/>
+                            <img key={movie.id} src={movie.cardImg} alt=""/>
                         </Wrap>
                     ))
                 }
