@@ -11,6 +11,26 @@ const Detail = () => {
             <ImageTitle>
                 <img src="https://upload.wikimedia.org/wikipedia/fr/1/1a/Bao_logo.png" alt=""/>
             </ImageTitle>
+
+            <Controls>
+
+                <PlayButton>
+
+                </PlayButton>
+
+                <TrailerButton>
+
+                </TrailerButton>
+
+                <AddButton>
+
+                </AddButton>
+
+                <GroupWatchButton>
+
+                </GroupWatchButton>
+
+            </Controls>
         </Container>
     );
 };
@@ -41,11 +61,33 @@ const Background = styled.div`
 
 const ImageTitle = styled.div`
   height: 30vh;
-  
+  width: 35vw;
+  min-height: 170px;
+  min-width: 200px;
   
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
+`
+
+const Controls = styled.div`
+  
+`
+
+const PlayButton = styled.div`
+  
+`
+
+const TrailerButton = styled.div`
+  
+`
+
+const AddButton = styled.div`
+  
+`
+
+const GroupWatchButton = styled.div`
+  
 `
