@@ -8,8 +8,21 @@ const Movies = () => {
 
             <Content>
                 <Wrap>
-                    <img src="https://www.charlotteruff.com/wp-content/uploads/2020/04/disney-classics-1-1600x800.jpg" alt=""/>
+                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
                 </Wrap>
+
+                <Wrap>
+                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
+                </Wrap>
+
+                <Wrap>
+                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
+                </Wrap>
+
+                <Wrap>
+                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
+                </Wrap>
+
             </Content>
         </Container>
     );
@@ -23,9 +36,16 @@ const Container = styled.div`
 `
 
 const Content = styled.div`
-  
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 `
 
 const Wrap = styled.div`
   
+    
+    img {
+      width: 300px;
+      object-fit: contain;
+    }
 `
