@@ -10,6 +10,10 @@ const Login = () => {
                 <SignUp>
                     GET ALL THERE 🚀
                 </SignUp>
+
+                <Description>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure odit omnis sunt. Accusantium at distinctio ipsum nesciunt numquam, omnis qui rem sunt suscipit veniam! Nemo perspiciatis quae voluptatem.
+                </Description>
             </CTA>
         </Container>
     );
@@ -40,7 +44,7 @@ const Container = styled.div`
 const CTA = styled.div`
   max-width: 650px;
   padding: 80px 40px;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
 `
@@ -58,5 +62,21 @@ const SignUp = styled.a`
   border-radius: 4px;
   text-align: center;
   font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  
+  &:hover {
+    background-color: #0483ee;
+    transition: all 0.25s;
+  }
 
+`
+
+const Description = styled.p`
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  line-height: 1.5;
 `
