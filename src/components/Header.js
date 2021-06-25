@@ -27,7 +27,7 @@ const Header = () => {
                 {
                     !userName ? (
                         <LoginContainer>
-                            <Login>
+                            <Login onClick={signIn}>
                                 LOGIN
                             </Login>
                         </LoginContainer>
