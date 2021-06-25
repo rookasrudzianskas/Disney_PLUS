@@ -25,4 +25,11 @@ const Background = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: -1;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `
