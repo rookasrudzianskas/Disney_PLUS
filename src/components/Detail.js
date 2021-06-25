@@ -7,6 +7,10 @@ const Detail = () => {
             <Background>
                 <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F03%2Fbao-rgb-s110_19e-pub16-215-2000.jpg&q=85" alt=""/>
             </Background>
+            
+            <ImageTitle>
+                <img src="https://upload.wikimedia.org/wikipedia/fr/1/1a/Bao_logo.png" alt=""/>
+            </ImageTitle>
         </Container>
     );
 };
@@ -26,10 +30,22 @@ const Background = styled.div`
   bottom: 0;
   right: 0;
   z-index: -1;
+  opacity: 0.8;
   
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+`
+
+const ImageTitle = styled.div`
+  height: 30vh;
+  
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 `
