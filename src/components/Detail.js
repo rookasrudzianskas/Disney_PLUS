@@ -15,11 +15,13 @@ const Detail = () => {
             <Controls>
 
                 <PlayButton>
-
+                    <img src="/images/play-icon-black.png" alt=""/>
+                    <span>PLAY</span>
                 </PlayButton>
 
                 <TrailerButton>
-
+                    <img src="/images/play-icon-white.png" alt=""/>
+                    <span>TRAILER</span>
                 </TrailerButton>
 
                 <AddButton>
@@ -73,11 +75,24 @@ const ImageTitle = styled.div`
 `
 
 const Controls = styled.div`
+  display: flex;
   
 `
 
 const PlayButton = styled.button`
+  border-radius: 4px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background-color: rgb(249, 249, 249);
+  border: none;
+  padding: 0px 24px;
+  margin-right: 22px;
   
+  span {
+    color: black;
+  }
 `
 
 const TrailerButton = styled.button`
