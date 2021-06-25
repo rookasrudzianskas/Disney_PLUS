@@ -23,6 +23,22 @@ const Movies = () => {
                     <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
                 </Wrap>
 
+                <Wrap>
+                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
+                </Wrap>
+
+                <Wrap>
+                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
+                </Wrap>
+
+                <Wrap>
+                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
+                </Wrap>
+
+                <Wrap>
+                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
+                </Wrap>
+
             </Content>
         </Container>
     );
@@ -46,7 +62,7 @@ const Wrap = styled.div`
   border-radius: 10px;
   overflow: hidden;
   border: 3px solid rgba(249, 249, 249, 0.1);
-  box-shadow: rgb(0, 0, 0 /69%) 0px 26px 30px -10px, rgb(0, 0, 0 / 73%) 0px 16px 10px -10px;
+  box-shadow: rgb(0 0 0 /69%) 0px 26px 30px -10px, rgb(0 0 0 / 73%) 0px 16px 10px -10px;
   transition: all 250ms;
   cursor: pointer;
     
