@@ -12,37 +12,13 @@ const Movies = () => {
             <h4>Recommended For You</h4>
 
             <Content>
-                <Wrap>
-                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
-                </Wrap>
-
-                <Wrap>
-                    <img src="https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/keyart_s33.jpg" alt=""/>
-                </Wrap>
+                {
+                    movies && movies.map((movie) => (
+                        <Wrap>
+                            <img key={movie.cardImg} src={movie.cardImg} alt=""/>
+                        </Wrap>
+                    ))
+                }
 
             </Content>
         </Container>
