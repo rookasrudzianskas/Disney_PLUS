@@ -62,6 +62,8 @@ const NavMenu = styled.div`
   margin-left: 25px;
   flex: 1;
   align-items: center;
+  padding:  0 36px;
+  overflow-x: hidden;
   
   a {
     display: flex;
@@ -109,5 +111,5 @@ const UserImage = styled.img`
   height: 48px;
   border-radius: 50%;
   cursor: pointer;
-  margin-left: 730px;
+  margin-left: 650px;
 `
