@@ -4,7 +4,9 @@ import styled from "styled-components";
 const Login = () => {
     return (
         <Container>
-
+            <CTA>
+                <CTALogoOne src="/images/cta-logo-one.svg" />
+            </CTA>
         </Container>
     );
 };
@@ -26,4 +28,13 @@ const Container = styled.div`
     bottom: 0;
     z-index: -1;
   }
+`
+
+const CTA = styled.div`
+  max-width: 650px;
+  padding: 80px 40px;
+`
+
+const CTALogoOne = styled.img`
+  
 `
