@@ -21,14 +21,16 @@ const Detail = () => {
                 // redirect to the hompage
             }
         })
-    }, []);
+    }, [id]);
 
     return (
         <Container>
+            {movie && (
+                <>
             <Background>
-                <img src={movie.backgroundImg} alt=""/>
+                <img src={movie?.backgroundImg} alt=""/>
             </Background>
-            
+
             <ImageTitle>
                 <img src={movie.titleImg} alt=""/>
             </ImageTitle>
@@ -62,6 +64,8 @@ const Detail = () => {
             <Description>
                 {movie.description}
             </Description>
+                </>
+                )}
 
         </Container>
     );
@@ -83,7 +87,7 @@ const Background = styled.div`
   right: 0;
   z-index: -1;
   opacity: 0.8;
-  
+
   img {
     width: 100%;
     height: 100%;
@@ -96,7 +100,7 @@ const ImageTitle = styled.div`
   width: 35vw;
   min-height: 170px;
   min-width: 200px;
-  
+
   img {
     width: 100%;
     height: 100%;
@@ -107,7 +111,7 @@ const ImageTitle = styled.div`
 const Controls = styled.div`
   display: flex;
   align-items: center;
-  
+
 `
 
 const PlayButton = styled.button`
@@ -122,12 +126,12 @@ const PlayButton = styled.button`
   margin-right: 22px;
   letter-spacing: 1.8px;
   cursor: pointer;
-  
+
   &:hover {
     background-color: rgb(198, 198, 198);
     transition: all 250ms;
   }
-  
+
   span {
     color: black;
   }
@@ -136,7 +140,7 @@ const PlayButton = styled.button`
 const TrailerButton = styled(PlayButton)`
   background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid rgb(249, 249, 249);
-    
+
     span {
       color: rgb(249, 249, 249);
     }
@@ -153,8 +157,8 @@ const AddButton = styled.button`
   border: 2px solid white;
   background-color: rgba(0, 0, 0 ,0.6);
   margin-right: 16px;
-  
-  
+
+
   span {
     font-size: 30px;
     color: white;
