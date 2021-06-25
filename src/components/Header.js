@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
@@ -14,6 +14,20 @@ const Header = () => {
     const userEmail = useSelector(selectUserEmail);
     const userPhoto = useSelector(selectUserPhoto);
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        auth.onAuthStateChanged(async (user) => {
+            // remembers in cooky, so if user, user
+            if(user) {
+                dispatch(setUserLogin({
+                    name: user.displayName,
+                    email: user.email,
+                    photo: user.photoURL,
+                }))
+                history.push("/");
+            }
+        })
+    }, []);
 
     const signIn = () => {
         // logins
