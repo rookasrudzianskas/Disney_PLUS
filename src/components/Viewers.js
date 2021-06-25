@@ -54,6 +54,6 @@ const Wrap = styled.div`
   &:hover {
     transform: scale(1.05);
     border-color: rgba(249, 249, 249, 0.8);
-    transition: all 0.2s;
+    transition: all 0.25s;
   }
 `
