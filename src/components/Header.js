@@ -6,7 +6,10 @@ const Header = () => {
         <Nav>
             <Logo src="/images/logo.svg" />
             <NavMenu>
-
+                <a href="">
+                    <img src="/images/home-icon.svg" />
+                    <span>HOME</span>
+                </a>
             </NavMenu>
         </Nav>
     );
@@ -20,7 +23,6 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   padding:  0 36px;
-  
 `
 
 const Logo = styled.img`
@@ -28,5 +30,10 @@ const Logo = styled.img`
 `
 
 const NavMenu = styled.div`
+  display: flex;
   
+  a {
+    display: flex;
+    align-items: center;
+  }
 `
