@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import {PlusOneOutlined} from "@material-ui/icons";
+import {selectMovies} from "../features/movie/movieSlice";
+import {useSelector} from "react-redux";
 
 const Detail = () => {
     return (

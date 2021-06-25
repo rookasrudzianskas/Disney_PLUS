@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {selectMovies} from "../features/movie/movieSlice";
 import {useSelector} from "react-redux";
+import { Link } from "react-router-dom";
 
 const Movies = () => {
 
@@ -14,8 +15,10 @@ const Movies = () => {
             <Content>
                 {
                     movies && movies.map((movie) => (
-                        <Wrap>
-                            <img key={movie.id} src={movie.cardImg} alt=""/>
+                        <Wrap  key={movie.id}>
+                            <Link to={`/detail/${movie.id}`}>
+                                <img src={movie.cardImg} alt=""/>
+                            </Link>
                         </Wrap>
                     ))
                 }
