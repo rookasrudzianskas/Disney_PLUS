@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
 import {Link} from "react-router-dom";
-import {useSelector} from "react-redux";
-import {selectUserEmail, selectUserName, selectUserPhoto} from "../features/user/userSlice";
+import {useDispatch, useSelector} from "react-redux";
+import {selectUserEmail, selectUserName, selectUserPhoto, setUserLogin} from "../features/user/userSlice";
 import {auth, provider} from "../firebase";
 
 
@@ -11,11 +11,20 @@ const Header = () => {
     const userName = useSelector(selectUserName);
     const userEmail = useSelector(selectUserEmail);
     const userPhoto = useSelector(selectUserPhoto);
+    const dispatch = useDispatch();
 
     const signIn = () => {
         // logins
 
-        auth.signInWithPopup(provider)
+        auth.signInWithPopup(provider).then((result) => {
+            let user = result.user;
+
+            dispatch(setUserLogin({
+                name: user.displayName,
+                email: user.email,
+                photo: user.photoURL,
+            }))
+        })
     }
 
 
