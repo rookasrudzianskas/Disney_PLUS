@@ -42,10 +42,12 @@ const Content = styled.div`
 `
 
 const Wrap = styled.div`
-  
+  border-radius: 10px;
+  overflow: hidden;
     
     img {
-      width: 300px;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
     }
 `

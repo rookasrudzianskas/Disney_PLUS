@@ -47,6 +47,8 @@ const Carousel = styled(Slider)`
   
   li.slick-active button::before {
     color: white;
+    outline: none;
+    text-decoration: none;
   }
   
   .slick-list {
@@ -71,6 +73,7 @@ const Wrap = styled.div`
       
       &:hover {
         border: 4px solid rgba(249, 249, 249, 0.8);
+        outline: none;
       }
     }
 `
