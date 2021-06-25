@@ -14,6 +14,8 @@ const Login = () => {
                 <Description>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure odit omnis sunt. Accusantium at distinctio ipsum nesciunt numquam, omnis qui rem sunt suscipit veniam! Nemo perspiciatis quae voluptatem.
                 </Description>
+
+                <CTALogoTwo src="/images/cta-logo-two.png" />
             </CTA>
         </Container>
     );
@@ -26,7 +28,7 @@ const Container = styled.div`
   position: relative;
   height: calc(100vh - 70px);
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: center;
 
   &:before {
@@ -37,6 +39,7 @@ const Container = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
+    opacity: 0.7;
     z-index: -1;
   }
 `
@@ -47,6 +50,7 @@ const CTA = styled.div`
   width: 90%;
   display: flex;
   flex-direction: column;
+  margin-top: 100px
 `
 
 const CTALogoOne = styled.img`
@@ -79,4 +83,8 @@ const Description = styled.p`
   letter-spacing: 1.5px;
   text-align: center;
   line-height: 1.5;
+`
+
+const CTALogoTwo = styled.img`
+  margin-top: 15px;
 `
