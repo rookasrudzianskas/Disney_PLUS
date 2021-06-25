@@ -36,6 +36,8 @@ const Header = () => {
                     <span>SERIES</span>
                 </a>
 
+                <UserImage src="https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK.jpg" />
+
             </NavMenu>
         </Nav>
     );
@@ -72,4 +74,10 @@ const NavMenu = styled.div`
       letter-spacing: 1.2px;
     }
   }
+`
+
+const UserImage = styled.img`
+  width:  48px;
+  height: 48px;
+  border-radius: 50%;
 `
