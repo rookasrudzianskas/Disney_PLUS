@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {selectMovies} from "../features/movie/movieSlice";
 
 const Movies = () => {
     return (
