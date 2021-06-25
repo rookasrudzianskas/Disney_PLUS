@@ -87,6 +87,17 @@ const NavMenu = styled.div`
         left: 0;
         right: 0;
         bottom: -6px;
+        opacity: 0;
+        transform-origin: left center;
+        transform: scaleX(0);
+      }
+    }
+    
+    &:hover {
+      span:after {
+        transform: scaleX(1);
+        opacity: 1;
+        transition: 0.2s;
       }
     }
   }
