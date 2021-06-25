@@ -79,7 +79,7 @@ const Header = () => {
                                 <span>SERIES</span>
                             </a>
 
-                            <UserImage src="https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK.jpg" />
+                            <UserImage src={userPhoto} />
 
                         </NavMenu>
                     </>
