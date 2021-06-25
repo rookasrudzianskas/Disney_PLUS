@@ -8,11 +8,20 @@ import {
     Route,
     Link
 } from "react-router-dom";
+import Detail from "./components/Detail";
 
 function App() {
   return (
     <div className="App">
-        <Header />
+        <Router>
+            <Header />
+
+            <Switch >
+                <Route path="/detail">
+                    <Detail />
+                </Route>
+            </Switch>
+        </Router>
         <Home />
     </div>
   );
