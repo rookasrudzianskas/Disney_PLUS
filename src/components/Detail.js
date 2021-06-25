@@ -89,14 +89,26 @@ const PlayButton = styled.button`
   border: none;
   padding: 0px 24px;
   margin-right: 22px;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: rgb(198, 198, 198);
+    transition: all 250ms;
+  }
   
   span {
     color: black;
   }
 `
 
-const TrailerButton = styled.button`
-  
+const TrailerButton = styled(PlayButton)`
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(249, 249, 249);
+    
+    span {
+      color: rgb(249, 249, 249);
+    }
 `
 
 const AddButton = styled.button`
