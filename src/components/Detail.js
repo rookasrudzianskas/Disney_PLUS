@@ -34,6 +34,15 @@ const Detail = () => {
                 </GroupWatchButton>
 
             </Controls>
+
+            <SubTitle>
+                    2020 👉 7m 👉 Family, Fantasy, Kids, Animation
+            </SubTitle>
+
+            <Description>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eos libero maiores natus nemo nesciunt placeat porro praesentium provident recusandae, unde voluptas, voluptatum? Aut dicta doloribus ducimus eum expedita explicabo maiores molestiae repellendus, sint voluptatum. A ab accusantium atque commodi dignissimos dolor eos, eveniet, ex facilis incidunt itaque libero nemo nisi odit quibusdam quis repellendus similique suscipit ut veniam voluptas.
+            </Description>
+
         </Container>
     );
 };
@@ -134,4 +143,18 @@ const AddButton = styled.button`
 
 const GroupWatchButton = styled(AddButton)`
   background: rgb(0, 0, 0);
+`
+
+const SubTitle = styled.div`
+  color: rgb(249, 249, 249);
+  font-size: 15px;
+  min-height: 20px;
+  margin-top: 26px;
+`
+
+const Description = styled.div`
+  line-height: 1.4;
+  font-size: 20px;
+  margin-top: 16px;
+  color: rgb(249, 249, 249);
 `
