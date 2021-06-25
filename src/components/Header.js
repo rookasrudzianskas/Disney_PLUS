@@ -10,6 +10,32 @@ const Header = () => {
                     <img src="/images/home-icon.svg" />
                     <span>HOME</span>
                 </a>
+
+                <a href="">
+                    <img src="/images/search-icon.svg" />
+                    <span>SEARCH</span>
+                </a>
+
+                <a href="">
+                    <img src="/images/watchlist-icon.svg" />
+                    <span>WATCHLIST</span>
+                </a>
+
+                <a href="">
+                    <img src="/images/original-icon.svg" />
+                    <span>ORIGINALS</span>
+                </a>
+
+                <a href="">
+                    <img src="/images/movie-icon.svg" />
+                    <span>MOVIES</span>
+                </a>
+
+                <a href="">
+                    <img src="/images/series-icon.svg" />
+                    <span>SERIES</span>
+                </a>
+
             </NavMenu>
         </Nav>
     );
@@ -35,5 +61,15 @@ const NavMenu = styled.div`
   a {
     display: flex;
     align-items: center;
+    padding:  0 20px;
+    
+    img {
+      height: 20px;
+    }
+    
+    span {
+      font-size: 13px;
+      letter-spacing: 1.2px;
+    }
   }
 `
