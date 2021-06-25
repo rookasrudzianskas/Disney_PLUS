@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {PlusOneOutlined} from "@material-ui/icons";
 
 const Detail = () => {
     return (
@@ -25,7 +26,7 @@ const Detail = () => {
                 </TrailerButton>
 
                 <AddButton>
-
+                    <span>+</span>
                 </AddButton>
 
                 <GroupWatchButton>
@@ -76,6 +77,7 @@ const ImageTitle = styled.div`
 
 const Controls = styled.div`
   display: flex;
+  align-items: center;
   
 `
 
@@ -112,7 +114,22 @@ const TrailerButton = styled(PlayButton)`
 `
 
 const AddButton = styled.button`
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0 ,0.6);
+  margin-right: 16px;
   
+  
+  span {
+    font-size: 30px;
+    color: white;
+  }
 `
 
 const GroupWatchButton = styled.button`
