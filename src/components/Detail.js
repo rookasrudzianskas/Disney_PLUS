@@ -30,7 +30,7 @@ const Detail = () => {
                 </AddButton>
 
                 <GroupWatchButton>
-
+                    <img src="/images/group-icon.png" alt=""/>
                 </GroupWatchButton>
 
             </Controls>
@@ -132,6 +132,6 @@ const AddButton = styled.button`
   }
 `
 
-const GroupWatchButton = styled.button`
-  
+const GroupWatchButton = styled(AddButton)`
+  background: rgb(0, 0, 0);
 `
