@@ -3,12 +3,19 @@ import styled from "styled-components";
 import {PlusOneOutlined} from "@material-ui/icons";
 import {selectMovies} from "../features/movie/movieSlice";
 import {useSelector} from "react-redux";
+import {useParams} from "react-router";
+
 
 const Detail = () => {
+    const { id } = useParams();
+
+    const movies = useSelector(selectMovies);
+
+
     return (
         <Container>
             <Background>
-                <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2018%2F03%2Fbao-rgb-s110_19e-pub16-215-2000.jpg&q=85" alt=""/>
+                <img src={movies.cardImg} alt=""/>
             </Background>
             
             <ImageTitle>
