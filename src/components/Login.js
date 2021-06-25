@@ -17,7 +17,7 @@ const Container = styled.div`
   height: calc(100vh - 70px);
 
   &:before {
-    background: url("/images/login-background.jpg") center center / cover no-repeat fixed;
+    background: url("/images/login-background.jpg") no-repeat fixed top;
     content: "";
     position: absolute;
     top: 0;
